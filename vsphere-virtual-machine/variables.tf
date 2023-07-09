@@ -5,19 +5,19 @@
 variable "username" {
   type        = string
   description = "VMware vSphere user name"
-  sensitive = true
+  sensitive   = true
 }
 
 variable "password" {
   type        = string
   description = "VMware vSphere password"
-  sensitive = true
+  sensitive   = true
 }
 
 variable "vcenter" {
   type        = string
   description = "VMWare vCenter server FQDN / IP"
-  sensitive = true
+  sensitive   = true
 }
 
 variable "datacenter" {
@@ -33,7 +33,7 @@ variable "datastore" {
 variable "template-folder" {
   type        = string
   description = "Template folder"
-  default = "Templates"
+  default     = "Templates"
 }
 
 variable "vsphere-cluster" {
@@ -46,18 +46,18 @@ variable "vsphere-cluster" {
 #=================================#
 
 variable "owner" {
-  type = string
+  type        = string
   description = "Owner of resource"
 }
 
 
 variable "vm_name" {
-  type = string
+  type        = string
   description = "Virtual Machine name"
 }
 
 variable "cpu" {
-  type = number
+  type        = number
   description = "Number of vCPU for the vSphere virtual machines"
 }
 
@@ -67,23 +67,23 @@ variable "vm-network" {
 }
 
 variable "cores-per-socket" {
-  type = number
+  type        = number
   description = "Number of cores per cpu for workers"
 }
 
 variable "ram" {
-  type = number
+  type        = number
   description = "Amount of RAM for the vSphere virtual machines (example: 2048)"
 }
 
 
 variable "disksize" {
-  type = number
+  type        = number
   description = "Disk size, example 100 for 100 GB"
 }
 
 variable "vm-template-name" {
   type        = string
   description = "The template to clone to create the VM"
-  default = "ubuntu-20-04-live-server-template"
+  default     = "ubuntu-20-04-live-server-template"
 }
